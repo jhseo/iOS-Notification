@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43DCB2A623F28A8300F5BE18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCB2A523F28A8300F5BE18 /* AppDelegate.swift */; };
-		43DCB2A823F28A8300F5BE18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCB2A723F28A8300F5BE18 /* SceneDelegate.swift */; };
 		43DCB2AA23F28A8300F5BE18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCB2A923F28A8300F5BE18 /* ViewController.swift */; };
 		43DCB2AD23F28A8300F5BE18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DCB2AB23F28A8300F5BE18 /* Main.storyboard */; };
 		43DCB2B023F28A8300F5BE18 /* ios_apns_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43DCB2AE23F28A8300F5BE18 /* ios_apns_test.xcdatamodeld */; };
@@ -16,7 +14,9 @@
 		43DCB2B523F28A8600F5BE18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DCB2B323F28A8600F5BE18 /* LaunchScreen.storyboard */; };
 		43DCB2DB23F38AB600F5BE18 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCB2DA23F38AB600F5BE18 /* NotificationService.swift */; };
 		43DCB2DF23F38AB600F5BE18 /* notification-service-ex.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 43DCB2D823F38AB600F5BE18 /* notification-service-ex.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		43DCB2E423F39A0300F5BE18 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43DCB2E323F39A0200F5BE18 /* sample.jpg */; };
+		43DCB2E923F39B6600F5BE18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCB2E723F39B6600F5BE18 /* AppDelegate.swift */; };
+		43DCB2EA23F39B6600F5BE18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCB2E823F39B6600F5BE18 /* SceneDelegate.swift */; };
+		43DCB2EC23F39B7000F5BE18 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43DCB2EB23F39B7000F5BE18 /* sample.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,6 @@
 
 /* Begin PBXFileReference section */
 		43DCB2A223F28A8300F5BE18 /* ios-apns-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-apns-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43DCB2A523F28A8300F5BE18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppDelegate/AppDelegate.swift; sourceTree = "<group>"; };
-		43DCB2A723F28A8300F5BE18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = AppDelegate/SceneDelegate.swift; sourceTree = "<group>"; };
 		43DCB2A923F28A8300F5BE18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43DCB2AC23F28A8300F5BE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43DCB2AF23F28A8300F5BE18 /* ios_apns_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_apns_test.xcdatamodel; sourceTree = "<group>"; };
@@ -58,7 +56,9 @@
 		43DCB2D823F38AB600F5BE18 /* notification-service-ex.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "notification-service-ex.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DCB2DA23F38AB600F5BE18 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		43DCB2DC23F38AB600F5BE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43DCB2E323F39A0200F5BE18 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sample.jpg; path = Assets.xcassets/sample.imageset/sample.jpg; sourceTree = "<group>"; };
+		43DCB2E723F39B6600F5BE18 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43DCB2E823F39B6600F5BE18 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		43DCB2EB23F39B7000F5BE18 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +101,15 @@
 		43DCB2A423F28A8300F5BE18 /* ios-apns-test */ = {
 			isa = PBXGroup;
 			children = (
-				43DCB2A523F28A8300F5BE18 /* AppDelegate.swift */,
-				43DCB2A723F28A8300F5BE18 /* SceneDelegate.swift */,
+				43DCB2E723F39B6600F5BE18 /* AppDelegate.swift */,
+				43DCB2E823F39B6600F5BE18 /* SceneDelegate.swift */,
 				43DCB2A923F28A8300F5BE18 /* ViewController.swift */,
 				43DCB2AB23F28A8300F5BE18 /* Main.storyboard */,
 				43DCB2B123F28A8600F5BE18 /* Assets.xcassets */,
 				43DCB2B323F28A8600F5BE18 /* LaunchScreen.storyboard */,
 				43DCB2B623F28A8600F5BE18 /* Info.plist */,
 				43DCB2AE23F28A8300F5BE18 /* ios_apns_test.xcdatamodeld */,
-				43DCB2E323F39A0200F5BE18 /* sample.jpg */,
+				43DCB2EB23F39B7000F5BE18 /* sample.jpg */,
 			);
 			path = "ios-apns-test";
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 				43DCB2B523F28A8600F5BE18 /* LaunchScreen.storyboard in Resources */,
 				43DCB2B223F28A8600F5BE18 /* Assets.xcassets in Resources */,
 				43DCB2AD23F28A8300F5BE18 /* Main.storyboard in Resources */,
-				43DCB2E423F39A0300F5BE18 /* sample.jpg in Resources */,
+				43DCB2EC23F39B7000F5BE18 /* sample.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +236,8 @@
 			files = (
 				43DCB2AA23F28A8300F5BE18 /* ViewController.swift in Sources */,
 				43DCB2B023F28A8300F5BE18 /* ios_apns_test.xcdatamodeld in Sources */,
-				43DCB2A623F28A8300F5BE18 /* AppDelegate.swift in Sources */,
-				43DCB2A823F28A8300F5BE18 /* SceneDelegate.swift in Sources */,
+				43DCB2E923F39B6600F5BE18 /* AppDelegate.swift in Sources */,
+				43DCB2EA23F39B6600F5BE18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
